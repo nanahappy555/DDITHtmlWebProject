@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/outStyle.css">
+<style>
+table {
+	padding-top:50px;
+	border: 1px solid lightgray;
+	border-collapse: collapse;
+}
+input[type=text] {
+	width: 80px;
+	text-align: right;
+}
+button{
+	display: inline-block;
+}
+td:nth-child(2) {
+	text-align: right;
+}
+.td1 {
+	text-align: center;
+}
+
+form {
+  margin-left: 20%; 
+/*  margin-top: 20%; */
+}
+
+</style>
+</head>
+<body>
+<form>
+<div>
+<table border=1>
+	<tr>
+		<th></th>
+		<th>Product</th>
+		<th>price</th>
+		<th>QTY</th>
+		<th>Total</th>
+	</tr>
+	
+	<tr>
+		<td><input type="checkbox"></td>
+		<td>intel 6코어 엘더i5 본체</td>
+		<td>1,057,000원</td>
+		<td><input type="text" id="qty1" value="" placeholder="0"></td>
+		<td></td>
+	</tr>
+	
+	<tr>
+		<td><input type="checkbox"></td>
+		<td>로지텍 ERGO 키보드</td>
+		<td>159,000원</td>
+		<td><input type="text" id="qty2" value="" placeholder="0"></td>
+		<td></td>
+	</tr>
+	
+	<tr>
+		<td><input type="checkbox"></td>
+		<td>로지텍 ERGO 마우스</td>
+		<td>119,000원</td>
+		<td><input type="text" id="qty3" value="" placeholder="0"></td>
+		
+		<td></td>
+	</tr>
+	
+	<tr>
+		<td ></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td><input type="text" id="total"></td>
+	</tr>
+	</table>
+	</div>
+	<div id="divbutton">
+	<input type="button" value="계산" onclick="calc()">
+	<input type="button" value="구매" onclick="alert('결제페이지로 이동합니다....')">
+	<input type="reset" value="초기화">
+	</div>
+
+</form>
+
+<script>
+function calc() {
+	let qty1 = parseInt(document.getElementById('qty1').value);
+	let qty2 = parseInt(document.getElementById('qty2').value);
+	let qty3 = parseInt(document.getElementById('qty3').value);
+	let sum = (qty1*1057000) + (qty2*159000) + (qty3*119000);
+	
+	console.log(typeof qty1);
+	
+	document.getElementById('total').value = sum;
+}
+</script>
+
+</body>
+</html>

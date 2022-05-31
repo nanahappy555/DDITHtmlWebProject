@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/outStyle.css">
+<style>
+table {
+	margin-left: 5%;
+	margin-right: 5%;
+	width: auto; /* 테이블 너비 */
+	/* 	height: 500px; */
+	border: 1px solid lightgray;
+	boder-collapse: collapse;
+	table-layout: fixed;
+	word-wrap: break-word; /* 튀어나간 글자 정렬 */
+}
+
+td {
+	text-align: center; /* 가운데정렬 */
+/* 	height: 50px; */
+}
+
+th {
+	background-color: black; /* 배경색 */
+	color: gold; /* 폰트색상 */
+}
+
+img {
+	width: 300px;
+}
+
+tr:nth-child(2) {
+	height: 100px;
+	font-size: 11px;
+}
+
+tr:nth-child(2) span {
+	color: blue;
+	font-size: 16px;
+}
+
+tr:nth-child(3) {
+	
+}
+</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<td><img src="./images/monitor/m1.jpg" alt="컴퓨터상품 1"></td>
+			<td><img src="./images/monitor/m2.jpg" alt="컴퓨터상품 2"></td>
+			<td><img src="./images/monitor/m2.jpg" alt="컴퓨터상품 3"></td>
+		</tr>
+
+		<tr>
+			<td><span><strong>[주사율 75Hz][HDMI / D-SUB포트]
+						[24형]DELL SE2422H 광시야각</strong></span><br> 60.45cm(24인치) / 와이드(16:9) / 평면 /
+				VA / 광시야각 / 1920 x 1080(FHD) / 픽셀피치: 0.2745mm / 5ms(GTG) / 250cd /
+				3,000:1 / 최대 주사율: 75Hz / 안티글레어 / 플리커 프리 / 블루라이트 차단 / 눈부심 방지 / SW
+				화면분할 / HDCP 지원 / 틸트(상하) / 100 x 100m..<br></td>
+			<td><span><strong>[QHD][최대 주사율 155Hz]
+						[27형][알파스캔]AOC Q27G2S 게이밍 IPS 155 QHD 프리싱크 [무결점]</strong></span><br>
+				68.5cm(27인치) / 와이드(16:9) / 평면 / IPS / 광시야각 / 2560 x 1440(QHD) /
+				픽셀피치: 0.2331mm / 1ms(MPRT) / 350cd / 1,000:1 / 80,000,000:1 / 최대
+				주사율: 155Hz / 논글레어 / 플리커 프리 / 블루라이트 차단 / 눈부심 방지 / 고정종횡비 지원 /
+				크로마서브샘플링..</td>
+			<td><span><strong>[TV모니터][27형]LG전자 룸앤 TV
+						27TK600D</strong></span><br> LED TV / 69cm(27인치) / 풀HD / VA패널 / 명암비: 500만:1 /
+				밝기: 250cd / 응답속도: 5ms / 16:9 / 평면형 / 2.0ch스피커(10W) / 방송녹화 / USB재생 /
+				HDMI(2개) / USB(1개) / 소비전력: 32W / 1등급 / 4.5kg / 플리커 프리 / 인풋랙 제어 / PIP
+				/ 100 x 100mm / Black ..</td>
+		</tr>
+
+		<tr>
+			<td>159,000원</td>
+			<td>456,000원</td>
+			<td>318,500원</td>
+		</tr>
+
+		<tr>
+			<td><input type="button" value="장바구니에 담기"
+				onclick="alert('장바구니에 추가됐습니다.')"></td>
+			<td><input type="button" value="장바구니에 담기"
+				onclick="alert('장바구니에 추가됐습니다.')"></td>
+			<td><input type="button" value="장바구니에 담기"
+				onclick="alert('장바구니에 추가됐습니다.')"></td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/outStyle.css">
+<style>
+table {
+	margin-left:5%; 
+    margin-right:5%;
+	width: auto; /* 테이블 너비 */
+/* 	height: 500px; */
+	border: 1px solid lightgray;
+	boder-collapse: collapse;
+	table-layout: fixed;  
+	word-wrap: break-word; /* 튀어나간 글자 정렬 */
+}
+
+td {
+	text-align: center; /* 가운데정렬 */
+/* 	height: 50px; */
+}
+
+th {
+	background-color: black; /* 배경색 */
+	color: gold; /* 폰트색상 */
+}
+
+img {
+	width: 300px;
+}
+
+tr:nth-child(2) {
+	height: 100px;
+	font-size: 16px;
+}
+tr:nth-child(2) span {
+	color: red;
+	font-size: 20px;
+}
+
+
+
+</style>
+</head>
+<body>
+<table>
+	<tr>
+		<td><img src="./images/com/c1.jpg" alt="컴퓨터상품 1"></td>
+		<td><img src="./images/com/c2.jpg" alt="컴퓨터상품 2"></td>
+		<td><img src="./images/com/c3.jpg" alt="컴퓨터상품 3"></td>
+	</tr>
+	
+	<tr>
+		<td><span><strong>intel 6코어 엘더i5 12400[터보4.4GHz]</strong></span><br>
+			intel UHD 730 그래픽<br>
+			DDR4 8G / SSD 256G [초고속 하드]</td>
+		<td><span><strong>intel 6코어 엘더i3 12400F[터보4.4GHz]</strong></span><br>
+			지포스 RTX3060 OC 12G<br>
+			DDR4 16G / SSD 512G [NVNe 초고속]</td>
+		<td><span><strong>intel 12코어 엘더i7 12700F[터보4.9GHz]</strong></span><br>
+			지포스 RTX3060 OC 8G<br>
+			DDR4 16G / SSD 500G [NVNe 초고속]</td>
+	</tr>
+	
+	<tr>
+		<td>976,000원</td>
+		<td>1,057,000원</td>
+		<td>1,297,100원</td>
+	</tr>
+	
+	<tr>
+		<td><input type="button" value="장바구니에 담기" 
+			onclick="alert('장바구니에 추가됐습니다.')"></td>
+		<td><input type="button" value="장바구니에 담기" 
+			onclick="alert('장바구니에 추가됐습니다.')"></td>
+		<td><input type="button" value="장바구니에 담기" 
+			onclick="alert('장바구니에 추가됐습니다.')"></td>
+	</tr>
+</table>
+</body>
+</html>

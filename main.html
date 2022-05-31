@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Main</title>
+<!-- 웹폰트 -->
+<link rel="stylesheet" href="css/outStyle.css">
+
+<style>
+/* body * { */
+/* 	box-sizing: border-box; */
+/* 	font-family: 'Noto Sans KR', sans-serif; /* 한글 웹폰트*/ */
+/* 	font-family: 'Righteous', cursive; /* 영문 웹폰트*/ */
+/* 	/* 	font-size: 12pt; */ */
+/* 	padding: 2px; */
+/* } */
+
+/* mainIf { */
+/* 	width: calc(70%); */
+/* 	border-color: red; */
+/* 	background-color: yellow; */
+/* } */
+
+</style>
+
+<script>
+function send() {
+// 	alert("까꿍"); 
+	//데이터 전송을 위한 코드작성
+	var frm = document.getElementsByTagName('form'); //form이 여러개면 [index]을 지정
+	frm.submit(); //form data전송
+}
+</script>
+
+</head>
+<body>
+
+	<header>
+	<div>
+	
+			<img src="./images/logo.png" alt="사이트 로고">
+			<a href="main.html" target="_self">COMMOA - Computer Shopping mall -</a>
+	</div>
+	</header>
+
+	<nav id="nav">
+		<ul>
+			<li><a href="index.html" target="mainIf">Home</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;</li>
+			<li><a href="index.html" target="mainIf">About Us</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;</li>
+			<li><a href="index.html" target="mainIf">News</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;</li>
+			<li><a href="index.html" target="mainIf">My Account</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;</li>
+			<li><a href="index.html" target="mainIf">Contacts</a></li>
+		</ul>
+	</nav>
+
+
+	<main>
+		<aside id="left">
+			<ul>
+				<li><a href="computer.html" target="mainIf">게임용컴퓨터</a></li>
+				<li><a href="moniter.html" target="mainIf">모니터</a></li>
+				<li><a href="mouse.html" target="mainIf">마우스</a></li>
+				<li><a href="keyborad.html" target="mainIf">키보드</a></li>
+				<li><a href="etc.html" target="mainIf">부품/주변기기</a></li>
+			</ul>
+		</aside>
+
+		<section>
+			<iframe src="./index.html" name="mainIf"></iframe>
+		</section>
+		
+		<aside id="right">
+			<div id="shopcart">
+				<h3>Shopping Cart</h3>
+				현재 쇼핑 카트에 물품이 없습니다.<br>
+				<a href="cart.html" target="mainIf">쇼핑카트 보기</a>
+				
+			 
+			</div>
+			<div id="login">
+				<h4>LOG_IN</h4>
+				<form action="./js/login.jsp" method="post">
+					<br> <label>아이디</label><br> <input type="text"  name="inputId"><br>
+					<label>비밀번호</label><br> <input type="text" name="inputPw"><br> <br>
+					<input type="submit" value="로그인">
+					<input type="button" value="회원가입"  onclick="mainIf.location.href='register.html'" target="mainIf">
+				</form>
+			</div>
+		</aside>
+	</main>
+
+	<footer>Copyright (c) 2022 LHR</footer>
+
+</body>
+</html>
