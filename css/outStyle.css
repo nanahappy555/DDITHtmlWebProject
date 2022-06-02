@@ -1,0 +1,139 @@
+ul { list-style: none;}
+a{ 
+    text-decoration: none;
+    /* font-weight: bold; */
+    font-size: 20px;
+}
+a:link { text-decoration: none; color: black;}
+a:visited { text-decoration: none; color: black;}
+a:hover{ color:rgb(161, 142, 168);}
+
+
+body * {
+    border : none ;
+	padding: 2px;
+}
+
+header, nav, aside, section, footer {
+	box-sizing: border-box; /*  padding을 포함 */
+	
+}
+
+header{
+	color: white;
+    background-color: #354259;
+	height : 100px;
+	font-size: 30px;
+	text-align: left;
+	padding-top: 5px;
+	font-weight: bold;
+}
+
+header a:link { text-decoration: none; color: white;}
+header a:visited { text-decoration: none; color: white;}
+
+header div { margin: 20px; }
+
+
+nav{
+	
+    background-color: #CDC2AE;
+	padding-top: -20px;
+	width:100%;
+	height : 70px;
+	overflow: hidden; /* 넘친글자표현방법:잘림 */
+    border: 1px dotted black;
+	border-left-style: none;
+	border-right-style: none;
+	text-align: center;
+}
+
+footer{
+    color: white;
+	clear : both;
+	height : 20px;	
+	text-align: center;
+	padding-top : 1px;
+    background-color: #8CC0DE;
+}
+
+ul{
+	padding-top: -10px;
+	list-style: none;
+}
+
+#nav ul{
+	/* margin : 2px auto; */
+	margin-left : 10%;
+	margin-right : 10%;
+    /* font-size: 1.7em; */
+	padding: 10px 0;
+}
+
+#nav li{
+	margin-top : 20px;
+	display : inline;
+ 	width : 340px;
+	height : 40px; 
+	text-align: center;
+	overflow: auto;
+	float : none;
+	letter-spacing: 2px;
+}
+
+main {
+	display: flex;
+}
+
+#left{
+	
+  /*   float: left; */
+    padding: 10px 5%;
+	padding-left:10px; 
+	padding-right: 10px;
+	width : calc(15%);
+	height : 800px;
+	background: #FAF0D7;
+	line-height: 30px;
+	text-align: center;
+}
+
+#left a:hover { text-decoration: underline wavy; color:rgb(126, 101, 87)}
+
+section {
+	position: relative;
+	text-align: center;
+	/* float:left; */
+	margin: 0 auto;
+	width : calc(70%);
+	height : 800px;
+	background: white;
+	
+
+}
+
+iframe {
+	position: absolute;
+	/* float: left; */
+	padding: 0 1%;
+	display: block;
+	border: none;
+	height: 100%;
+	width: 99%;
+	overflow: hidden;
+	}
+	
+#right{
+  /*   float: right; */
+    /* padding: 0 5%; */
+	/* padding-left:10px; 
+	padding-right: 10px; */
+	width : calc(15%);
+	height : 800px;
+	background: #FAF0D7;
+}
+
+[alt="사이트 로고"] {
+	width: 30px;
+	vertical-align: middle;
+}
