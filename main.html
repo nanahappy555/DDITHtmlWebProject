@@ -3,25 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Main</title>
-<!-- 웹폰트 -->
 <link rel="stylesheet" href="css/outStyle.css">
-
-<style>
-/* body * { */
-/* 	box-sizing: border-box; */
-/* 	font-family: 'Noto Sans KR', sans-serif; /* 한글 웹폰트*/ */
-/* 	font-family: 'Righteous', cursive; /* 영문 웹폰트*/ */
-/* 	/* 	font-size: 12pt; */ */
-/* 	padding: 2px; */
-/* } */
-
-/* mainIf { */
-/* 	width: calc(70%); */
-/* 	border-color: red; */
-/* 	background-color: yellow; */
-/* } */
-
-</style>
 
 <script>
 function send() {
@@ -46,10 +28,9 @@ function send() {
 	<nav id="nav">
 		<ul>
 			<li><a href="index.html" target="mainIf">Home</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;</li>
-			<li><a href="index.html" target="mainIf">About Us</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;</li>
-			<li><a href="index.html" target="mainIf">News</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;</li>
-			<li><a href="index.html" target="mainIf">My Account</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;</li>
-			<li><a href="index.html" target="mainIf">Contacts</a></li>
+			<li><a href="event.html" target="mainIf">event</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;</li>
+			<li><a href="news.html" target="mainIf">News</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;</li>
+			<li><a href="contact.html" target="mainIf">Contacts</a></li>
 		</ul>
 	</nav>
 
@@ -61,29 +42,28 @@ function send() {
 				<li><a href="moniter.html" target="mainIf">모니터</a></li>
 				<li><a href="mouse.html" target="mainIf">마우스</a></li>
 				<li><a href="keyborad.html" target="mainIf">키보드</a></li>
-				<li><a href="etc.html" target="mainIf">부품/주변기기</a></li>
 			</ul>
 		</aside>
 
 		<section>
-			<iframe src="./index.html" name="mainIf"></iframe>
+			<iframe scrolling="auto" src="./index.html" name="mainIf"></iframe>
 		</section>
 		
 		<aside id="right">
 			<div id="shopcart">
 				<h3>Shopping Cart</h3>
 				현재 쇼핑 카트에 물품이 없습니다.<br>
-				<a href="cart.html" target="mainIf">쇼핑카트 보기</a>
+				<input type="button" value="CART"  onclick="mainIf.location.href='cart.html'" target="mainIf">
 				
 			 
 			</div>
 			<div id="login">
 				<h4>LOG_IN</h4>
 				<form action="./js/login.jsp" method="post">
-					<br> <label>아이디</label><br> <input type="text"  name="inputId"><br>
+					 <label>아이디</label><br> <input type="text"  name="inputId"><br>
 					<label>비밀번호</label><br> <input type="text" name="inputPw"><br> <br>
-					<input type="submit" value="로그인">
-					<input type="button" value="회원가입"  onclick="mainIf.location.href='register.html'" target="mainIf">
+					<input type="submit" value="LOGIN">
+					<input type="button" value="JOIN"  onclick="mainIf.location.href='register.html'" target="mainIf">
 				</form>
 			</div>
 		</aside>
